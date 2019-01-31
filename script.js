@@ -94,3 +94,17 @@ function checkSavings() {
     }
 }
 checkSavings();
+
+function chooseOptExpenses() {
+    for (i=0; i < 3; i++) {
+        let a=prompt("Статья необязательных расходов", ""),
+            optionalExpenses={1:"Ответ на вопрос"};
+
+        if ( (typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50 ) {
+            console.log("done");
+            appData.expenses[a] = b;
+        } else {
+            i = i-1;
+        }
+    }
+}
